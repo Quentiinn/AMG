@@ -1,0 +1,90 @@
+ContratBundle\Entity\Contrat:
+    type: entity
+    table: null
+    repositoryClass: ContratBundle\Repository\ContratRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nomNaissance:
+            type: string
+            length: 255
+            column: Nom_naissance
+        nomUsage:
+            type: string
+            length: 255
+            column: Nom_usage
+        prenom:
+            type: string
+            length: 255
+            column: Prenom
+        adresse:
+            type: string
+            length: 255
+            column: Adresse
+        ville:
+            type: string
+            length: 255
+            column: Ville
+        enQualite:
+            type: boolean
+            column: En_qualite
+        tel:
+            type: string
+            length: 255
+            column: Tel
+        numero:
+            type: string
+            length: 255
+            column: Numero
+        nomEnfant:
+            type: string
+            length: 255
+            column: Nom_enfant
+        prenomEnfant:
+            type: string
+            length: 255
+            column: Prenom_enfant
+        dateNaissance:
+            type: date
+            column: Date_naissance
+        dateEffetContrat:
+            type: date
+            column: Date_effet_contrat
+        dureePeriodeEssai:
+            type: integer
+            column: duree_periode_essai
+        nbHeures:
+            type: integer
+            column: Nb_heures
+        jourRepos:
+            type: integer
+            column: Jour_repos
+        isMensuel:
+            type: boolean
+            column: is_mensuel
+        nbSemaines:
+            type: integer
+            column: nb_semaines
+        salaireBrut:
+            type: float
+            column: salaire_brut
+        salaireNet:
+            type: float
+            column: salaire_net
+        salaireMenseulleNet:
+            type: float
+            column: salaire_menseulle_net
+        modaliteCongePayes:
+            type: integer
+            column: modalite_conge_payes
+        prixIndemnite:
+            type: float
+            column: prix_indemnite
+        repasFournis:
+            type: integer
+            column: repas_fournis
+    lifecycleCallbacks: {  }

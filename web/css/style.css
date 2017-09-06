@@ -15,13 +15,6 @@ body{
     font-size: 30px;
 
 }
-.gauche:hover{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-}
 
 .droite{
     float: left;
@@ -36,7 +29,7 @@ body{
     font-size: 30px;
 }
 
-.droite:hover{
+.droite:hover, .gauche:hover{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -44,7 +37,3 @@ body{
     -o-filter: grayscale(100%);
 }
 
-#contrat{
-    background-image:url('../img/contrat.png');
-    background-size: cover;
-}

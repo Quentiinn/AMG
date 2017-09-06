@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f8cba7-a212-4d29-a516-cb27c4197218" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Contrat/AddContrat.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Contrat/AddContrat.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php" afterPath="$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php" afterPath="$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContratBundle/Resources/config/doctrine/Contrat.orm.yml" afterPath="$PROJECT_DIR$/src/ContratBundle/Resources/config/doctrine/Contrat.orm.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
+            <state relative-caret-position="68">
+              <caret line="4" column="69" lean-forward="false" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -60,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContratType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContratType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -120,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
@@ -132,6 +128,7 @@
         <option value="$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php" />
         <option value="$PROJECT_DIR$/src/ContratBundle/Resources/config/doctrine/Contrat.orm.yml" />
         <option value="$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
       </list>
     </option>
   </component>
@@ -899,12 +896,12 @@
       <updated>1504557208472</updated>
       <workItem from="1504557210200" duration="5499000" />
       <workItem from="1504602589644" duration="21241000" />
-      <workItem from="1504686210926" duration="31896000" />
+      <workItem from="1504686210926" duration="31999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58636000" />
+    <option name="totallyTimeSpent" value="58739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1267,14 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1314,6 +1303,14 @@
           <folding>
             <element signature="e#38#71#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="69" lean-forward="false" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>

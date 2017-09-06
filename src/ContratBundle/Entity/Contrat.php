@@ -38,7 +38,7 @@ class Contrat
     private $ville;
 
     /**
-     * @var bool
+     * @var int
      */
     private $enQualite;
 
@@ -261,7 +261,7 @@ class Contrat
     /**
      * Set enQualite
      *
-     * @param boolean $enQualite
+     * @param integer $enQualite
      *
      * @return Contrat
      */
@@ -275,7 +275,7 @@ class Contrat
     /**
      * Get enQualite
      *
-     * @return bool
+     * @return int
      */
     public function getEnQualite()
     {

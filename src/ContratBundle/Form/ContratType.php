@@ -2,7 +2,10 @@
 
 namespace ContratBundle\Form;
 
+use Doctrine\DBAL\Types\TextType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -20,9 +23,16 @@ class ContratType extends AbstractType
             ->add('prenom')
             ->add('adresse')
             ->add('ville')
-            ->add('enQualite')
-            ->add('tel')
-            ->add('numero')
+            ->add('enQualite' , ChoiceType::class , array(
+                'choices' => array(
+                    'père' => '1',
+                    'mère' => '2',
+                    'tuteur' => '3',
+                    'autre' => '4'
+                )
+            ))
+            ->add('tel' )
+            ->add('numero' , IntegerType::class , array('label' => 'N° Urssaf ou Pajemploi'))
             ->add('nomEnfant')
             ->add('prenomEnfant')
             ->add('dateNaissance')

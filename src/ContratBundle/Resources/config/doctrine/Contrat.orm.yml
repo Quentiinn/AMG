@@ -30,7 +30,7 @@ ContratBundle\Entity\Contrat:
             length: 255
             column: Ville
         enQualite:
-            type: boolean
+            type: integer
             column: En_qualite
         tel:
             type: string

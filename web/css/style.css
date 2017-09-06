@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+.gauche{
+    margin:0 ;
+    float: left ;
+    width:49%;
+    height: 50% ;
+    background-size: cover;
+    background-image:url('../img/fond.JPG');
+    text-transform: uppercase;
+    line-height:500px; /* centrage vertical */
+    text-align:center; /* centrage horizontal */
+    color: white;
+    font-size: 30px;
+
+}
+.gauche:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+.droite{
+    float: left;
+    width:49%;
+    height: 50%;
+    text-transform: uppercase;
+    line-height:500px; /* centrage vertical */
+    text-align:center; /* centrage horizontal */
+    background-size: cover;
+    background-image:url('../img/home2.JPG');
+    color: white;
+    font-size: 30px;
+}
+
+.droite:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+#contrat{
+    background-image:url('../img/contrat.png');
+    background-size: cover;
+}

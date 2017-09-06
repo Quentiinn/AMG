@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    {%  block stylesheet %}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}"
+    {% endblock %}
 </head>
 <body>
+{%  block content %}{%  endblock %}
+{% block body %}{% endblock %}
 <style>
     @import url(http://fonts.googleapis.com/css?family=Roboto);
     /****** LOGIN ******/

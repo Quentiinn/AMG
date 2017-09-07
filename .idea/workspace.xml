@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f8cba7-a212-4d29-a516-cb27c4197218" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php" afterPath="$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php" afterPath="$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ContratBundle/Resources/config/doctrine/Contrat.orm.yml" afterPath="$PROJECT_DIR$/src/ContratBundle/Resources/config/doctrine/Contrat.orm.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContratType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContratType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
+            <state relative-caret-position="104">
+              <caret line="70" column="4" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
               <folding>
                 <element signature="e#39#79#0#PHP" expanded="true" />
               </folding>
@@ -67,6 +64,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="70">
               <caret line="379" column="6" lean-forward="false" selection-start-line="379" selection-start-column="6" selection-end-line="379" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContratController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -118,8 +125,8 @@
       <find>mensu</find>
       <find>date</find>
       <find>montant</find>
-      <find>dateTime</find>
       <find>montatn</find>
+      <find>dateTime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
@@ -149,6 +155,7 @@
         <option value="$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php" />
         <option value="$PROJECT_DIR$/src/ContratBundle/Resources/config/doctrine/Contrat.orm.yml" />
         <option value="$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php" />
       </list>
     </option>
   </component>
@@ -936,12 +943,12 @@
       <workItem from="1504602589644" duration="21241000" />
       <workItem from="1504686210926" duration="32053000" />
       <workItem from="1504770420880" duration="7560000" />
-      <workItem from="1504800697053" duration="10520000" />
+      <workItem from="1504800697053" duration="11234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76873000" />
+    <option name="totallyTimeSpent" value="77587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -956,7 +963,7 @@
     <frame x="1167" y="0" width="1400" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2649919" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26492536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5032415" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1179,6 +1186,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,13 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1357,18 +1358,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="70" column="4" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+          <folding>
+            <element signature="e#39#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="379" column="6" lean-forward="false" selection-start-line="379" selection-start-column="6" selection-end-line="379" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1381,13 +1384,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ContratBundle/Form/ContratType.php">
+    <entry file="file://$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="66" column="34" lean-forward="false" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
-          <folding>
-            <element signature="e#39#79#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="70">
+          <caret line="379" column="6" lean-forward="false" selection-start-line="379" selection-start-column="6" selection-end-line="379" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

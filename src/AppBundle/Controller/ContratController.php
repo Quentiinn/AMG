@@ -25,6 +25,8 @@ class ContratController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($contrat);
             $em->flush();
+
+            return $this->redirect('home');
         }
 
         $formView = $form->createView();

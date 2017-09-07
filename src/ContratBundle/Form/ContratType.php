@@ -2,13 +2,15 @@
 
 namespace ContratBundle\Form;
 
-use Doctrine\DBAL\Types\TextType;
+
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+
 
 class ContratType extends AbstractType
 {
@@ -20,9 +22,10 @@ class ContratType extends AbstractType
         $builder
             ->add('nomNaissance')
             ->add('nomUsage')
-            ->add('prenom')
+            ->add('prenom' , TextType::class, array('label' => 'Prénom'))
             ->add('adresse')
             ->add('ville')
+            ->add('code' , IntegerType::class , array('label' => 'Code Postal'))
             ->add('enQualite' , ChoiceType::class , array(
                 'choices' => array(
                     'père' => '1',

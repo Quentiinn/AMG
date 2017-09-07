@@ -29,6 +29,10 @@ ContratBundle\Entity\Contrat:
             type: string
             length: 255
             column: Ville
+        code:
+            type: string
+            length: 255
+            column: code_postal
         enQualite:
             type: integer
             column: En_qualite

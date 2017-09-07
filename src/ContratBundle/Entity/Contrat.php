@@ -40,6 +40,11 @@ class Contrat
     /**
      * @var int
      */
+    private $code;
+
+    /**
+     * @var int
+     */
     private $enQualite;
 
     /**
@@ -232,6 +237,31 @@ class Contrat
     public function getAdresse()
     {
         return $this->adresse;
+    }
+
+
+    /**
+     * Set code
+     *
+     * @param string $code
+     *
+     * @return Contrat
+     */
+    public function setcode($code)
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getcode()
+    {
+        return $this->code;
     }
 
     /**

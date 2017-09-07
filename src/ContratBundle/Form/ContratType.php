@@ -4,8 +4,11 @@ namespace ContratBundle\Form;
 
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\MoneyType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -32,22 +35,34 @@ class ContratType extends AbstractType
                     'mère' => '2',
                     'tuteur' => '3',
                     'autre' => '4'
-                )
+                ) , 'label' => 'En qualité de'
             ))
-            ->add('tel' )
-            ->add('numero' , IntegerType::class , array('label' => 'N° Urssaf ou Pajemploi'))
+            ->add('tel' , TextType::class , array('label' => 'Téléphone') )
+            ->add('numero' , TextType::class , array('label' => 'N° Urssaf ou Pajemploi'))
             ->add('nomEnfant')
             ->add('prenomEnfant')
-            ->add('dateNaissance')
-            ->add('dateEffetContrat')
-            ->add('dureePeriodeEssai')
-            ->add('nbHeures')
-            ->add('jourRepos')
-            ->add('isMensuel')
-            ->add('nbSemaines')
-            ->add('salaireBrut')
-            ->add('salaireNet')
-            ->add('salaireMenseulleNet')
+            ->add('dateNaissance' ,DateType::class, array('label' => 'Date de naissance de l\'enfant ' ,  'years' => range(1990 , 2030)))
+            ->add('dateEffetContrat',DateType::class, array('label' => 'Date d\'effet du contrat' , 'years' => range(1990 , 2030)))
+            ->add('dureePeriodeEssai' , IntegerType::class , array('label' => 'Durée de la periode d\'essai'))
+            ->add('nbHeures' , IntegerType::class , array('label' => 'Horaire hebdomadaire - nombre d\'heures'))
+            ->add('jourRepos' )
+            ->add('isMensuel' , CheckboxType::class , array('label' => 'Planning mensuel s\'il y a lieu'))
+            ->add('nbSemaines' , IntegerType::class , array('label' => 'Nombres de semaines'))
+            ->add('salaireBrut', MoneyType::class , array('label' => 'Salaire horaire brut de base'))
+            ->add('salaireNet' , MoneyType::class , array('label' => 'Salaire horaire net de base'))
+            ->add('accueil' , ChoiceType::class , array(
+                'choices' => array(
+                    'Si l\'accueil s\'effectue sur une année complète' => '1',
+                    'Si l\'accueil s\'effectue sur une année incomplète' => '2',
+                    'Si l\'accueil est occasionel' => '3',
+                ) , 'label' => 'Salaire mensuel de base'
+            ))
+            ->add('salaireMenseulleNet' , MoneyType::class , array('label' => 'Salaire mensuel net'))
+            ->add('salaireMensuelBrut' , MoneyType::class , array('label' => 'Salaire mensuel brut'))
+            ->add('salaireHoraireMajore' , MoneyType::class , array('label' => 'Salaire horaire majoré'))
+            ->add('datePaiementSalaire' , DateType::class , array('label' => 'Date de paiement du salaire'))
+            ->add('delaiPrevenanceConge' , DateType::class , array('label' => 'Péciser le délai de prévenace de fixation des dates de congés'))
+            ->add('montantMajoration')
             ->add('modaliteCongePayes')
             ->add('prixIndemnite')
             ->add('repasFournis')

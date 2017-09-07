@@ -88,7 +88,7 @@ class Contrat
     private $nbHeures;
 
     /**
-     * @var int
+     * @var string
      */
     private $jourRepos;
 
@@ -131,6 +131,45 @@ class Contrat
      * @var int
      */
     private $repasFournis;
+
+    /**
+     * @var int
+     */
+    private $accueil;
+
+    /**
+     * @var int
+     */
+    private $montantMajoration;
+
+    /**
+     * @var int
+     */
+    private $salaireHoraireMajore;
+
+    /**
+     * @var \DateTime
+     */
+    private $datePaiementSalaire;
+
+    /**
+     * @var int
+     */
+    private $delaiPrevenanceConge;
+
+    /**
+     * @var float
+     */
+    private $salaireMensuelBrut;
+
+
+
+
+
+
+
+
+
 
 
     /**
@@ -507,7 +546,7 @@ class Contrat
     /**
      * Set jourRepos
      *
-     * @param integer $jourRepos
+     * @param string $jourRepos
      *
      * @return Contrat
      */
@@ -521,7 +560,7 @@ class Contrat
     /**
      * Get jourRepos
      *
-     * @return int
+     * @return string
      */
     public function getJourRepos()
     {
@@ -718,6 +757,154 @@ class Contrat
     public function getRepasFournis()
     {
         return $this->repasFournis;
+    }
+
+
+    /**
+     * Get accueil
+     *
+     * @return int
+     */
+    public function getAccueil()
+    {
+        return $this->accueil;
+    }
+
+    /**
+     * Set accueil
+     *
+     * @param int $accueil
+     *
+     * @return Contrat
+     */
+    public function setAccueil($accueil)
+    {
+        $this->accueil = $accueil;
+
+        return $this;
+    }
+
+
+    /**
+     * Get montantMajoration
+     *
+     * @return float
+     */
+    public function getMontantMajoration()
+    {
+        return $this->montantMajoration;
+    }
+
+    /**
+     * Set montantMajoration
+     *
+     * @param float $montantMajoration
+     *
+     * @return Contrat
+     */
+    public function setMontantMajoration($montantMajoration)
+    {
+        $this->montantMajoration = $montantMajoration;
+
+        return $this;
+    }
+
+
+
+    /**
+     * Get salaireHoraireMajore
+     *
+     * @return float
+     */
+    public function getSalaireHoraireMajore()
+    {
+        return $this->salaireHoraireMajore;
+    }
+
+    /**
+     * Set salaireHoraireMajore
+     *
+     * @param float $salaireHoraireMajore
+     *
+     * @return Contrat
+     */
+    public function setSalaireHoraireMajore($salaireHoraireMajore)
+    {
+        $this->salaireHoraireMajore = $salaireHoraireMajore;
+
+        return $this;
+    }
+
+    /**
+     * Get datePaiementSalaire
+     *
+     * @return \DateTime
+     */
+    public function getDatePaiementSalaire()
+    {
+        return $this->datePaiementSalaire;
+    }
+
+    /**
+     * Set datePaiementSalaire
+     *
+     * @param \DateTime $datePaiementSalaire
+     *
+     * @return Contrat
+     */
+    public function setDatePaiementSalaire($datePaiementSalaire)
+    {
+        $this->datePaiementSalaire = $datePaiementSalaire;
+
+        return $this;
+    }
+
+    /**
+     * Get delaiPrevenanceConge
+     *
+     * @return float
+     */
+    public function getDelaiPrevenanceConge()
+    {
+        return $this->delaiPrevenanceConge;
+    }
+
+    /**
+     * Set delaiPrevenanceConge
+     *
+     * @param float $delaiPrevenanceConge
+     *
+     * @return Contrat
+     */
+    public function setDelaiPrevenanceConge($delaiPrevenanceConge)
+    {
+        $this->delaiPrevenanceConge = $delaiPrevenanceConge;
+
+        return $this;
+    }
+
+    /**
+     * Get salaireMensuelBrut
+     *
+     * @return int
+     */
+    public function getSalaireMensuelBrut()
+    {
+        return $this->salaireMensuelBrut;
+    }
+
+    /**
+     * Set salaireMensuelBrut
+     *
+     * @param string $salaireMensuelBrut
+     *
+     * @return Contrat
+     */
+    public function setSalaireMensuelBrut($salaireMensuelBrut)
+    {
+        $this->salaireMensuelBrut = $salaireMensuelBrut;
+
+        return $this;
     }
 }
 

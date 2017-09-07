@@ -65,7 +65,7 @@ ContratBundle\Entity\Contrat:
             type: integer
             column: Nb_heures
         jourRepos:
-            type: integer
+            type: string
             column: Jour_repos
         isMensuel:
             type: boolean
@@ -91,4 +91,22 @@ ContratBundle\Entity\Contrat:
         repasFournis:
             type: integer
             column: repas_fournis
+        accueil:
+            type: integer
+            column: accueil
+        montantMajoration:
+            type: float
+            column: montant_majoration
+        salaireHoraireMajore:
+            type: float
+            column: salaire_horaire_majore
+        datePaiementSalaire:
+            type: date
+            column: date_paiement_salaire
+        delaiPrevenanceConge:
+            type: date
+            column: delai_provenance_conge
+        salaireMensuelBrut:
+            type: float
+            column: salaire_mensuel_brut
     lifecycleCallbacks: {  }

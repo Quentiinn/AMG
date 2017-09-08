@@ -109,4 +109,7 @@ ContratBundle\Entity\Contrat:
         salaireMensuelBrut:
             type: float
             column: salaire_mensuel_brut
+        ridAssistante:
+            type: integer
+            column: rid_assistante
     lifecycleCallbacks: {  }

@@ -162,7 +162,10 @@ class Contrat
      */
     private $salaireMensuelBrut;
 
-
+    /**
+     * @var integer
+     */
+    private $ridAssistante;
 
 
 
@@ -906,5 +909,30 @@ class Contrat
 
         return $this;
     }
+
+    /**
+     * Get ridAssistance
+     *
+     * @return int
+     */
+    public function getRidAssistante()
+    {
+        return $this->ridAssistante;
+    }
+
+    /**
+     * Set ridAssistante
+     *
+     * @param string $ridAssistante
+     *
+     * @return Contrat
+     */
+    public function setRidAssistante($ridAssistante)
+    {
+        $this->ridAssistante = $ridAssistante;
+
+        return $this;
+    }
+
 }
 

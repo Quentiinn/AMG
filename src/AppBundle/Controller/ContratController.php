@@ -17,8 +17,9 @@ class ContratController extends Controller
     public function addContrat(Request $request)
     {
         $contrat = new Contrat();
-
-        $form = $this->createForm(ContratType::class , $contrat);
+        //permet d'ajouter les informations de l'utilisateur connecté
+        $contrat->user = $this->getUser();
+        $form = $this->createForm(ContratType::class , $contrat );
 
         $form->handleRequest($request);
         if ($form->isSubmitted()){
@@ -33,4 +34,5 @@ class ContratController extends Controller
 
         return $this->render('Contrat/AddContrat.html.twig' , array('form' => $formView));
     }
+
 }

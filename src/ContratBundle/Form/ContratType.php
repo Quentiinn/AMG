@@ -7,13 +7,14 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\MoneyType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class ContratType extends AbstractType
 {
@@ -66,6 +67,7 @@ class ContratType extends AbstractType
             ->add('modaliteCongePayes')
             ->add('prixIndemnite')
             ->add('repasFournis')
+            ->add('ridAssistante' , HiddenType::class , array('data' => 'aa'))
             ->add('save', SubmitType::class, array('label' => 'Ajout d\'un contrat'));
     }
     

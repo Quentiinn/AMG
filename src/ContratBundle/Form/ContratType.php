@@ -2,7 +2,8 @@
 
 namespace ContratBundle\Form;
 
-
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -14,15 +15,16 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class ContratType extends AbstractType
 {
+
     /**
      * {@inheritdoc}
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        $id = $options['user']->getId();
         $builder
             ->add('nomNaissance')
             ->add('nomUsage')
@@ -67,7 +69,7 @@ class ContratType extends AbstractType
             ->add('modaliteCongePayes')
             ->add('prixIndemnite')
             ->add('repasFournis')
-            ->add('ridAssistante' , HiddenType::class , array('data' => 'aa'))
+            ->add('ridAssistante' , HiddenType::class , array('data' => $id))
             ->add('save', SubmitType::class, array('label' => 'Ajout d\'un contrat'));
     }
     
@@ -77,7 +79,8 @@ class ContratType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'ContratBundle\Entity\Contrat'
+            'data_class' => 'ContratBundle\Entity\Contrat' ,
+            'user' => null
         ));
     }
 

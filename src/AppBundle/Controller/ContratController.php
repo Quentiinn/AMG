@@ -17,9 +17,8 @@ class ContratController extends Controller
     public function addContrat(Request $request)
     {
         $contrat = new Contrat();
-        //permet d'ajouter les informations de l'utilisateur connecté
-        $contrat->user = $this->getUser();
-        $form = $this->createForm(ContratType::class , $contrat );
+        //array(user) permet de faire passer les informations dans le form afin de l'utiliser dans la création du formulaire
+        $form = $this->createForm(ContratType::class , $contrat , array('user' => $this->getUser()) );
 
         $form->handleRequest($request);
         if ($form->isSubmitted()){

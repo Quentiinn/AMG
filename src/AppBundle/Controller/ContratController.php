@@ -7,6 +7,7 @@ use ContratBundle\Entity\Contrat;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class ContratController extends Controller
 {
@@ -26,6 +27,9 @@ class ContratController extends Controller
             $em->persist($contrat);
             $em->flush();
 
+
+            $session = $this->get('session');
+            $session->getFlashBag()->add('success' , 'Le contrat a bien été crée');
             return $this->redirect('home');
         }
 

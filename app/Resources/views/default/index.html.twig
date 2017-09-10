@@ -1,6 +1,17 @@
 {% extends 'base.html.twig' %}
 
 {%  block body %}
+    {% for message in app.flashes('success') %}
+        <div class="flash-notice">
+            <script>
+                swal(
+                        'Félicitations!',
+                        '{{ message }}',
+                        'success'
+                )
+            </script>
+        </div>
+    {% endfor %}
     <div class="home">
         <div id="contrat" class="gauche"><a href="{{ path('addContrat') }}">Ajout d'un contrat</a></div>
         <div class="droite">Gestion des contrats</div>

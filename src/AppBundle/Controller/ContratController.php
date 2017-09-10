@@ -46,6 +46,7 @@ class ContratController extends Controller
     {
         //je récupere l'id du contrat
         $id = $request->query->get('id');
+        /****************************  PREMIERE PAGE ****************************/
         $pdf = new \FPDF();
         $pdf->AddPage();
         $pdf->SetMargins(0,0,0);
@@ -179,6 +180,48 @@ class ContratController extends Controller
             $pdf->Cell(0,0, 'Non');
         }
 
+
+        /****************************  DEUXIEME PAGE ****************************/
+
+        $pdf->AddPage();
+        $pdf->Image('img/contrat2.jpg',0,0, 210 , 297);
+
+        //Nombre de semaine
+        $pdf->setXY(100 , 17);
+        $pdf->Cell(0,0,$contrat->getNbSemaines());
+
+        //Salaire horaire de base
+        $pdf->setXY(70 , 43);
+        $pdf->Cell(0,0, $contrat->getSalaireBrut());
+
+        $pdf->SetX(160);
+        $pdf->Cell(0,0,$contrat->getSalaireNet());
+
+        //Salaire mensuel de base
+        if ($contrat->getAccueil() == 1){
+            $pdf->SetXY(38 , 70);
+            $pdf->Cell(0,0, $contrat->getSalaireMensuelBrut());
+            $pdf->SetX(75);
+            $pdf->Cell(0,0, $contrat->getSalaireMenseulleNet());
+        }else if($contrat->getAccueil() == 2){
+            $pdf->SetXY(130 , 70);
+            $pdf->Cell(0,0, $contrat->getSalaireMensuelBrut());
+            $pdf->SetX(168);
+            $pdf->Cell(0,0, $contrat->getSalaireMenseulleNet());
+        }else if($contrat->getAccueil() == 3){
+            $pdf->SetXY(100 , 80);
+            $pdf->Cell(0,0, $contrat->getSalaireMensuelBrut());
+            $pdf->SetX(168);
+            $pdf->Cell(0,0, $contrat->getSalaireMenseulleNet());
+        }
+
+        //majoration
+
+        $pdf->SetXY(128 , 90.5);
+        $pdf->Cell(0,0,$contrat->getMontantMajoration());
+
+        $pdf->SetX(177);
+        $pdf->Cell(0,0,$contrat->getSalaireHoraireMajore());
 
 
         return new Response($pdf->Output() , 200 , array(

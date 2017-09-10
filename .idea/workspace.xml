@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="51f8cba7-a212-4d29-a516-cb27c4197218" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -40,8 +38,8 @@
       <file leaf-file-name="Contrat.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="591" column="32" selection-start-line="591" selection-start-column="20" selection-end-line="591" selection-end-column="32" />
+            <state relative-caret-position="775">
+              <caret line="821" column="43" selection-start-line="821" selection-start-column="20" selection-end-line="821" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -50,8 +48,8 @@
       <file leaf-file-name="ContratController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+            <state relative-caret-position="715">
+              <caret line="222" column="22" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="22" />
               <folding>
                 <element signature="e#40#75#0#PHP" expanded="true" />
               </folding>
@@ -825,12 +823,12 @@
       <workItem from="1504800697053" duration="11611000" />
       <workItem from="1504860656121" duration="12746000" />
       <workItem from="1504983570340" duration="3828000" />
-      <workItem from="1505033808971" duration="12418000" />
+      <workItem from="1505033808971" duration="14974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106956000" />
+    <option name="totallyTimeSpent" value="109512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1252,16 +1250,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ContratBundle/Entity/Contrat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="591" column="32" selection-start-line="591" selection-start-column="20" selection-end-line="591" selection-end-column="32" />
+        <state relative-caret-position="775">
+          <caret line="821" column="43" selection-start-line="821" selection-start-column="20" selection-end-line="821" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ContratController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+        <state relative-caret-position="715">
+          <caret line="222" column="22" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="22" />
           <folding>
             <element signature="e#40#75#0#PHP" expanded="true" />
           </folding>

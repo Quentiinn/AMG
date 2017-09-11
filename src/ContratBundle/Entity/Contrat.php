@@ -865,7 +865,7 @@ class Contrat
     /**
      * Get delaiPrevenanceConge
      *
-     * @return float
+     * @return /Datetime
      */
     public function getDelaiPrevenanceConge()
     {
@@ -875,7 +875,7 @@ class Contrat
     /**
      * Set delaiPrevenanceConge
      *
-     * @param float $delaiPrevenanceConge
+     * @param datetime $delaiPrevenanceConge
      *
      * @return Contrat
      */

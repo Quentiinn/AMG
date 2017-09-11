@@ -223,6 +223,16 @@ class ContratController extends Controller
         $pdf->SetX(177);
         $pdf->Cell(0,0,$contrat->getSalaireHoraireMajore());
 
+        //date de paiement du salaire
+        $pdf->SetXY(70, 97);
+
+        $datePaiement = date_parse($contrat->getDatePaiementSalaire()->format('Y-m-d H:i:s'));
+        $pdf->Cell(0,0,$datePaiement['day'].'/'.$datePaiement['month'].'/'.$datePaiement['year']);
+        $datePrevenance = date_parse($contrat->getDelaiPrevenanceConge()->format('Y-m-d H:i:s'));
+        //delai prevenance fixation date de congé
+        $pdf->SetXY(107 , 130.5);
+        $pdf->Cell(0,0,$datePrevenance['day'].'/'.$datePrevenance['month'].'/'.$datePrevenance['year']);
+
 
         return new Response($pdf->Output() , 200 , array(
            'Content-Type' => 'application/pdf'

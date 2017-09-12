@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+{{ dump() }}
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gestion des contrats</title>
+    </head>
+    <body>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Listes des contrats</div>
+        <div class="panel-body">
+            <p>Voici-ci dessous la liste des contrats</p>
+        </div>
+
+        <!-- Table -->
+        <table class="table" >
+            <tr>
+                <th>Nom des parents</th>
+                <th>Nom de l'enfant</th>
+                <th>Modification du contrat</th>
+                <th>Affichage du contrat en pdf</th>
+            </tr>
+            {% for contrat in contrats %}
+                <tr>
+                    <th>{{ contrat.nomUsage ~ ' ' ~ contrat.prenom }}</th>
+                    <th>{{ contrat.nomEnfant ~ ' ' ~ contrat.prenomEnfant }}</th>
+                    <th><a href="">Modification</a></th>
+                    <th><a href="{{ path('pdfContrat') }}"><img src="img/pdf.png" width="50" height="50" /></a></th>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </body>
+    </html>
+{% endblock %}

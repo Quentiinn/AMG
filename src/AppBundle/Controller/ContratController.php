@@ -40,6 +40,19 @@ class ContratController extends Controller
     }
 
     /**
+     * @Route("/GestionContrat", name="GestionContrat")
+     */
+    public function GestionContrat(Request $request)
+    {
+
+        $rid = $this->getUser()->getId();
+        $contrats = $this->getDoctrine()->getRepository('ContratBundle:Contrat')
+        ->findBy(["ridAssistante" => $rid]);
+        return $this->render('Contrat/GestionContrat.html.twig'  , array('contrats' => $contrats));
+    }
+
+
+    /**
      * @Route("/pdfContrat", name="pdfContrat")
      */
     public function pdf(Request $request)

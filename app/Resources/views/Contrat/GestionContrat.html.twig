@@ -31,7 +31,8 @@
                     <th>{{ contrat.nomUsage ~ ' ' ~ contrat.prenom }}</th>
                     <th>{{ contrat.nomEnfant ~ ' ' ~ contrat.prenomEnfant }}</th>
                     <th><a href="">Modification</a></th>
-                    <th><a href="{{ path('pdfContrat') }}"><img src="img/pdf.png" width="50" height="50" /></a></th>
+                    <th><a href="{{ path('pdfContrat' , {'id' : contrat.id}) }}"><img src="img/pdf.png" width="50" height="50" /></a></th>
+                    
                 </tr>
             {% endfor %}
         </table>
